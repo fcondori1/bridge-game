@@ -1,6 +1,6 @@
 # Bridge Game
 
-## Description 
+## Description
 
 A browser-based version of the popular show Squid Game glass bridge game coded in JavaScript, HTML, and CSS. Objective of the game is to get to the end without losing all your lives and falling to your death....I mean pillows.
 
@@ -12,7 +12,7 @@ A browser-based version of the popular show Squid Game glass bridge game coded i
 
 - As a user, I want a browser-based interface so that I can play the game.
 - As a user, I want there to be an algorithm to randomize the path on the bridge for every game.
-- As a user, I want to be able to see where I place my token so that I can interact with the game.
+- As a user, I want to be able to see where the tile breaks to know where not to go in the path
 - As a user, I want the game to reset so that it gives the option to continue with the next life.
 - As a user, I want a life count to let me know how many turns I have left.
 
@@ -20,6 +20,7 @@ A browser-based version of the popular show Squid Game glass bridge game coded i
 
 - As a user, I want there to be a time-limit to finish the game so that it makes it more intense.
 - As a user, I want an alert to pop up modal when I win or lose.
+- As a user. I want to be able to see where the token is places for the person so that we know where to go
 
 #### Silver
 
@@ -31,4 +32,5 @@ A browser-based version of the popular show Squid Game glass bridge game coded i
 - As a user, I want to upload an image as my token.
 
 ### Wireframes
-![Brudge game](./assets/wireframe-about.png)
+
+![Bridge game](./assets/wireframe-about.png)
