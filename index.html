@@ -22,44 +22,59 @@
         <div class="start">START</div>
         <div id="grid">
             <div class="top">
-                <div id="tile1 one" class="north" ></div>
-                <div id="tile2 two" class="north" ></div>
-                <div id="tile3 three" class="north" ></div>
-                <div id="tile4 foud" class="north" ></div>
-                <div id="tile5 five" class="north" ></div>
-                <div id="tile6 six" class="north" ></div>
-                <div id="tile7 seven" class="north" ></div>
-                <div id="tile8 eight" class="north" ></div>
-                <div id="tile9 nine" class="north" ></div>
-                <div id="tile10 ten" class="north" ></div>
-                <div id="tile11 eleven" class="north" ></div>
-                <div id="tile12 twelve" class="north" ></div>
-                <div id="tile13 thirteen" class="north" ></div>
-                <div id="tile14 fourteen" class="north" ></div>
-                <div id="tile15 fifteen" class="north" ></div>
+                <div id= "top1" class="north tile-1" ></div>
+                <div id= "top2" class="north tile-2" ></div>
+                <div id= "top3" class="north tile-3" ></div>
+                <div id= "top4" class="north tile-4" ></div>
+                <div id= "top5" class="north tile-5" ></div>
+                <div id= "top6" class="north tile-6" ></div>
+                <div id= "top7" class="north tile-7" ></div>
+                <div id= "top8" class="north tile-8" ></div>
+                <div id= "top9" class="north tile-9" ></div>
+                <div id= "top10" class="north tile-10" ></div>
+                <div id= "top11" class="north tile-11" ></div>
+                <div id= "top12" class="north tile-12" ></div>
+                <div id= "top13" class="north tile-13" ></div>
+                <div id= "top14" class="north tile-14" ></div>
+                <div id= "top15" class="north tile-15" ></div>
             </div>
             <div class="bottom">
-                <div id="tile1 sixteen" class="south" ></div>
-                <div id="tile2 seventeen" class="south" ></div>
-                <div id="tile3 eighteen" class="south" ></div>
-                <div id="tile4 ninteen" class="south" ></div>
-                <div id="tile5 twenty" class="south" ></div>
-                <div id="tile6 twenty-one" class="south" ></div>
-                <div id="tile7 twenty-two" class="south" ></div>
-                <div id="tile8 twenty-three" class="south" ></div>
-                <div id="tile9 twenty-four" class="south" ></div>
-                <div id="tile10 twenty-five" class="south" ></div>
-                <div id="tile11 twenty-six" class="south" ></div>
-                <div id="tile12 twenty-seven" class="south" ></div>
-                <div id="tile13 twenty-eight" class="south" ></div>
-                <div id="tile14 twenty-nine" class="south" ></div>
-                <div id="tile15 thirty" class="south" ></div>
+                <div id="bot1" class="south tiles-1" ></div>
+                <div id="bot2" class="south tiles-2" ></div>
+                <div id="bot3" class="south tiles-3" ></div>
+                <div id="bot4" class="south tiles-4" ></div>
+                <div id="bot5" class="south tiles-5" ></div>
+                <div id="bot6" class="south tiles-6" ></div>
+                <div id="bot7" class="south tiles-7" ></div>
+                <div id="bot8" class="south tiles-8" ></div>
+                <div id="bot9" class="south tiles-9" ></div>
+                <div id="bot10" class="south tiles-10" ></div>
+                <div id="bot11" class="south tiles-11" ></div>
+                <div id="bot12" class="south tiles-12" ></div>
+                <div id="bot13" class="south tiles-13" ></div>
+                <div id="bot14" class="south tiles-14" ></div>
+                <div id="bot15" class="south tiles-15" ></div>
             </div>
         </div>
         <div class="end">END</div>
     </div>
     <!-- win modal -->
+    <div id="winModal">
+        <div class="win-textbox">
+            <h1>You survived!</h1>
+            <h2>Unfortunately this isn't Squid Game so you don't win any money :(</h2>
+            <button id="reset-win" onclick="location.reload();">Play Again?</button>
+            <!-- https://www.codegrepper.com/code-examples/html/refresh+button+html -->
+        </div>
+    </div>
+
     <!-- lose modal  -->
+    <div id="loseModal">
+        <div class="lose-textbox">
+            <h1>You died! All your lived are up</h1>
+            <button id="reset-lose" onclick="location.reload();">Go Again?</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
