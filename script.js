@@ -6,7 +6,7 @@ const PLAYER = {
 
 /*----- app's state (variables) -----*/
 let path;
-let playerLives = 10;
+let playerLives = 9;
 let currentPlayer;
 
 /*----- cached element references -----*/
@@ -234,7 +234,7 @@ function updateGameBridge(event) {
 	}
 }
 
-// /*----- modals -----*/
+// /*----- modal -----*/
 startGameButton.onclick = function () {
 	modal.style.display = 'none';
 };
