@@ -2,6 +2,7 @@
 const PLAYER = {
 	playerOne: 'rgba(255, 0, 0, 0)',
 };
+// SEIR 115 tic-tac-toe reference
 
 /*----- app's state (variables) -----*/
 let path;
@@ -225,7 +226,6 @@ const checkForLoser = () => {
 
 function updateGameBridge(event) {
 	if (event.target.classList.contains('weak')) {
-		console.log('clicked on tile', event.target);
 		event.target.style.backgroundColor = currentPlayer;
 		event.target.style.border = '10px solid rgba(255, 0, 0, 0)';
 		livesLeft = playerLives--;

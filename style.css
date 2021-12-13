@@ -52,6 +52,7 @@ p {
 	height: 500px;
 	border: dotted 10px yellow;
 }
+/* tic-tac-toe assigntment refrence */
 
 .top,
 .bottom {
@@ -96,6 +97,7 @@ p {
 	overflow: auto;
 	display: block;
 }
+/* SEIR-115 Modal HW reference */
 
 #modal-textbox {
 	background-color: #19caca;
