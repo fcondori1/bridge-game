@@ -105,7 +105,6 @@ p {
 	margin: 150px auto;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 	padding: 2%;
-	/* font-family: Arial, Helvetica, sans-serif; */
 	display: flex;
 	flex-direction: column;
 }
@@ -121,9 +120,6 @@ p {
 	margin-top: 200px;
 }
 
-/* .top-1 {
-    background-color: cadetblue;
-} */
 #winModal {
 	background-color: rgba(155, 123, 123, 0.4);
 	position: absolute;
@@ -145,7 +141,6 @@ p {
 	margin: 150px auto;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 	padding: 2%;
-	/* font-family: Arial, Helvetica, sans-serif; */
 	display: flex;
 	flex-direction: column;
 }
@@ -182,7 +177,6 @@ p {
 	margin: 150px auto;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 	padding: 2%;
-	/* font-family: Arial, Helvetica, sans-serif; */
 	display: flex;
 	flex-direction: column;
 }

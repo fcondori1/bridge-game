@@ -5,7 +5,7 @@ const PLAYER = {
 
 /*----- app's state (variables) -----*/
 let path;
-let playerLives;
+let playerLives = 10;
 let currentPlayer;
 
 /*----- cached element references -----*/
@@ -15,7 +15,7 @@ const southTile = document.querySelector('.south');
 const currentLives = document.querySelector('h2');
 const modal = document.getElementById('modal');
 const winnerModal = document.getElementById('winModal');
-const loserModal = document.getElementById('loserModal');
+const loserModal = document.getElementById('loseModal');
 const startGameButton = document.querySelector('#startGameButton');
 const resetWinButton = document.querySelector('#reset-win');
 const resetLoseButton = document.querySelector('#reset-lose');
@@ -51,7 +51,6 @@ const south12 = document.querySelector('.tiles-12');
 const south13 = document.querySelector('.tiles-13');
 const south14 = document.querySelector('.tiles-14');
 const south15 = document.querySelector('.tiles-15');
-// console.log(north1, north2, north3, south1, south2, south15)
 
 const winGame = () => {
 	modal.style.display = 'none';
@@ -61,7 +60,6 @@ gameBridge.addEventListener('click', handleClick);
 winnerModal.addEventListener('click', winGame);
 
 function handleClick(event) {
-	// console.log('hello');
 	updateGameBridge(event);
 }
 
@@ -70,14 +68,6 @@ const openWinnerModal = () => {
 };
 
 endingPoint.addEventListener('click', openWinnerModal);
-
-const checkForLoser = () => {
-	if (playerLives === 0) {
-		setTimeout(function () {
-			loserModal.style.display = 'none';
-		}, 5000);
-	}
-};
 
 /*----- functions -----*/
 function init() {
@@ -89,7 +79,6 @@ function randomNum() {
 	return Math.floor(Math.random() * 2);
 }
 failOdds = randomNum();
-console.log(randomNum());
 
 function randomTile1() {
 	if (randomNum() === 0) {
@@ -226,53 +215,26 @@ function randomTile15() {
 }
 randomTile15();
 
-playerLives = '9';
+const checkForLoser = () => {
+	if (playerLives === -1) {
+		setTimeout(function () {
+			loserModal.style.display = 'block';
+		}, 600);
+	}
+};
 
 function updateGameBridge(event) {
 	if (event.target.classList.contains('weak')) {
 		console.log('clicked on tile', event.target);
 		event.target.style.backgroundColor = currentPlayer;
 		event.target.style.border = '10px solid rgba(255, 0, 0, 0)';
-		currentLives.innerText = `${playerLives--} lives left`;
+		livesLeft = playerLives--;
+		currentLives.innerText = `${livesLeft} lives left`;
+		checkForLoser();
 	}
-	checkForLoser();
 }
 
 // /*----- modals -----*/
 startGameButton.onclick = function () {
 	modal.style.display = 'none';
 };
-
-// resetWinButton.onclick = location.reload()
-
-// resetLoseButton.onclick = function () {
-// 	loseModal.style.display = 'none';
-// };
-
-// console.log('i hit it', randomTile());
-
-// function pathing() {
-// 	if (fallOdds === 0) {
-// 		// let updateGameBridge color in the tile
-// 	}else{
-//         // let
-//     }
-// }
-
-// funtion of ending position
-// if event.target.classList.contains('.end') && currentPlayer
-//end 'win' modal screen
-// function endGame(event) {
-//     if (event.target.classList.contains('.end') && currentPlayer)
-// }
-
-// function of the game path
-// if '#north(math.floor(math.random() * 2) === 0)
-//give it an element that is 'weak'
-// else
-// give '#south' element that is 'weak'
-//weak = event.target.remove or background color rgba clear
-
-// fucntion of game over
-// if playerLives === 0
-//end 'lose' modal screen
