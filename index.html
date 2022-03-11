@@ -4,10 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bridge-Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 id="gameTitle">Bridge Game</h1>
+    <h2 class="livesLeft">10 lives left</h2>
+    <!-- Starter modal -->
+    <div id="modal">
+        <div id="modal-textbox">
+            <h1>Bridge Game</h1>
+            <h2>An iteration of the popular tv show Squid Game and thier glass bridge game.</h2>
+            <p>Attempt to make it from the start to the end. Begin by putting your cursor over start, then make your way through the tiles. Be careful though! Some of the tiles ahead of you can dissapear and you might fall to your death...I mean into a pile of pillows. Try your best with as many lives as you can! Good Luck!</p>
+            <button id="startGameButton">START</button>
+        </div>
+    </div>
+    <!-- Tiles -->
+    <div id="container">
+        <div class="start">START</div>
+        <div id="grid">
+            <div class="top">
+                <div id= "top1" class="north tile-1" ></div>
+                <div id= "top2" class="north tile-2" ></div>
+                <div id= "top3" class="north tile-3" ></div>
+                <div id= "top4" class="north tile-4" ></div>
+                <div id= "top5" class="north tile-5" ></div>
+                <div id= "top6" class="north tile-6" ></div>
+                <div id= "top7" class="north tile-7" ></div>
+                <div id= "top8" class="north tile-8" ></div>
+                <div id= "top9" class="north tile-9" ></div>
+                <div id= "top10" class="north tile-10" ></div>
+                <div id= "top11" class="north tile-11" ></div>
+                <div id= "top12" class="north tile-12" ></div>
+                <div id= "top13" class="north tile-13" ></div>
+                <div id= "top14" class="north tile-14" ></div>
+                <div id= "top15" class="north tile-15" ></div>
+            </div>
+            <div class="bottom">
+                <div id="bot1" class="south tiles-1" ></div>
+                <div id="bot2" class="south tiles-2" ></div>
+                <div id="bot3" class="south tiles-3" ></div>
+                <div id="bot4" class="south tiles-4" ></div>
+                <div id="bot5" class="south tiles-5" ></div>
+                <div id="bot6" class="south tiles-6" ></div>
+                <div id="bot7" class="south tiles-7" ></div>
+                <div id="bot8" class="south tiles-8" ></div>
+                <div id="bot9" class="south tiles-9" ></div>
+                <div id="bot10" class="south tiles-10" ></div>
+                <div id="bot11" class="south tiles-11" ></div>
+                <div id="bot12" class="south tiles-12" ></div>
+                <div id="bot13" class="south tiles-13" ></div>
+                <div id="bot14" class="south tiles-14" ></div>
+                <div id="bot15" class="south tiles-15" ></div>
+            </div>
+        </div>
+        <div class="end">END</div>
+    </div>
+    <!-- win modal -->
+    <div id="winModal">
+        <div class="win-textbox">
+            <h1>You survived!</h1>
+            <h2>Unfortunately this isn't Squid Game so you don't win any money :(</h2>
+            <button id="reset-win" onclick="location.reload();">Play Again?</button>
+            <!-- https://www.codegrepper.com/code-examples/html/refresh+button+html -->
+        </div>
+    </div>
+
+    <!-- lose modal  -->
+    <div id="loseModal">
+        <div class="lose-textbox">
+            <h1>You died! All your lives are up</h1>
+            <button id="reset-lose" onclick="location.reload();">Go Again?</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

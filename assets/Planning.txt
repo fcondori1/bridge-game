@@ -1,0 +1,15 @@
+Pseudocode for Bridge Game
+
+Declare constants for player
+Declare state variables for winState, path, 
+
+REFERENCE gameBoard, resetBtn
+
+Attach event listeners to Bridge
+
+What's going to happen when a click is registered on the gameBoard?
+- Add element to the gameboard that represents the player's starting position
+- With function determine which of the tiles are weak
+    -if weak, tile disapear
+    -if not continue 
+- When function clicks on the end platform, game over
